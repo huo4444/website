@@ -3,6 +3,6 @@
  */
 import React from 'react'
 import { render } from 'react-dom'
+import Root from './root'
 
-
-render(<div>hello</div>, document.getElementById('react-content'));
+render(<Root></Root>, document.getElementById('react-content'));

@@ -13,7 +13,9 @@ router.get('/', function(req, res, next) {
     var mainJs="/pc/dist/bundle-app.js";
     var mainCss="/pc/dist/bundle-app.css";
     if(platform==='mobile'){
-
+        var vendorJs="/mobile/dist/bundle-vendor.js";
+        var mainJs="/mobile/dist/bundle-app.js";
+        var mainCss="/mobile/dist/bundle-app.css";
     }
   res.render('index', { title: 'huo',"platform":platform ,"vendorJs":vendorJs,"mainJs":mainJs,"mainCss":mainCss});
 });
