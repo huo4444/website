@@ -29,6 +29,9 @@ module.exports = {
         new ExtractTextPlugin({
             // filename: 'bundle-[name]-[hash:5].css', disable: false, allChunks: true
             filename: 'bundle-[name].css', disable: false, allChunks: true
-        })
+        }),
+        new webpack.optimize.UglifyJsPlugin({
+            compress: { warnings: false }
+        }),
     ],
 }
