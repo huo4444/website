@@ -9,7 +9,7 @@ export default class HomePage extends React.Component{
         return <Row>
                 <Col push={8} span={8}>
                     <Card style={{ width: "100%",height:300 }} bodyStyle={{ paddingTop: 140,textAlign:"center",fontSize:"24px"}}>
-                        <i className="iconfont">&#xe601;</i>为您服务！
+                        <i className="iconfont">&#xe601;</i>即将为您服务！
                     </Card>
                 </Col>
 
