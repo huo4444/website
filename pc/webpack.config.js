@@ -11,8 +11,10 @@ module.exports = {
         vendor: ['react', 'react-dom', 'react-router','react-router-dom','scriptjs','whatwg-fetch']
     },
     output: {
-        path: path.resolve(__dirname, './dist'),
-        filename: "bundle-[name]-[hash:5].js",
+        path: path.resolve(__dirname, '../server/public/pc/dist'),
+        // filename: "bundle-[name]-[hash:5].js",
+        filename: "bundle-[name].js",
+        publicPath: '/pc/dist/',
         chunkFilename: "bundle-[name]-[hash:5].js"
     },
     module: {
@@ -25,7 +27,8 @@ module.exports = {
     },
     plugins: [
         new ExtractTextPlugin({
-            filename: 'bundle-[name]-[hash:5].css', disable: false, allChunks: true
+            // filename: 'bundle-[name]-[hash:5].css', disable: false, allChunks: true
+            filename: 'bundle-[name].css', disable: false, allChunks: true
         })
     ],
 }
