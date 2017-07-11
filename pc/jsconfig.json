@@ -7,8 +7,6 @@
 	},
 	"exclude": [
 		"node_modules",
-		"build",
-		"dll",
-		"properties"
+		"dist"
 	]
 }
