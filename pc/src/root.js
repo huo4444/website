@@ -41,7 +41,7 @@ const Root = () => <HashRouter >
             </div>
         </Content>
         <Footer style={{ textAlign: 'center' }}>
-            webSite ©2017 Created by <i className="iconfont">&#xe601;</i>
+            webSite ©2017 Created by <i className="iconfont icon-huo" style={{fontSize:"12px"}} ></i>
         </Footer>
     </Layout>
 </HashRouter>;
