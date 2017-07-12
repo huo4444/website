@@ -2,7 +2,8 @@
  * Created by Administrator on 2017/7/11 0011.
  */
 import React from 'react'
-import {WhiteSpace,Flex} from 'antd-mobile'
+import WhiteSpace from 'antd-mobile/lib/white-space'
+import Flex from 'antd-mobile/lib/flex'
 
 export default class Home extends React.Component{
     render(){

@@ -2,7 +2,10 @@
  * Created by Administrator on 2017/7/10 0010.
  */
 import React from 'react'
-import {Card,Row,Col } from 'antd'
+// import {Card,Row,Col } from 'antd'
+import Card from 'antd/lib/card'
+import Row from 'antd/lib/row'
+import Col from 'antd/lib/col'
 import './index.less'
 export default class HomePage extends React.Component{
     render(){

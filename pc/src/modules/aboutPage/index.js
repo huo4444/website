@@ -2,7 +2,11 @@
  * Created by Administrator on 2017/7/10 0010.
  */
 import React from 'react'
-import {Card,Row,Col,Spin } from 'antd'
+import Card from 'antd/lib/card'
+import Row from 'antd/lib/row'
+import Col from 'antd/lib/col'
+import Spin from 'antd/lib/spin'
+// import {Card,Row,Col,Spin } from 'antd'
 
 export default class HomePage extends React.Component{
 

@@ -2,7 +2,9 @@
  * Created by Administrator on 2017/7/11 0011.
  */
 import React from 'react'
-import {ActivityIndicator,Flex,WhiteSpace } from 'antd-mobile'
+import WhiteSpace from 'antd-mobile/lib/white-space'
+import Flex from 'antd-mobile/lib/flex'
+import ActivityIndicator from 'antd-mobile/lib/activity-indicator'
 
 export default class About extends React.Component{
     render(){

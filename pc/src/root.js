@@ -3,8 +3,11 @@
  */
 import React from 'react'
 // import {Router } from 'react-router'
-import {HashRouter ,Route,Link,Switch} from 'react-router-dom'
-import { Layout, Menu, Breadcrumb } from 'antd';
+import {HashRouter ,Route,Link} from 'react-router-dom'
+// import { Layout, Menu, Breadcrumb } from 'antd';
+import Layout from 'antd/lib/layout';
+import Menu from 'antd/lib/menu';
+import Breadcrumb from 'antd/lib/breadcrumb'
 const { Header, Content, Footer } = Layout;
 // import createHistory from 'history/createHashHistory'
 // const history = createHistory()

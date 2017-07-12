@@ -2,8 +2,8 @@
  * Created by Administrator on 2017/7/11 0011.
  */
 import React from 'react'
-import {TabBar} from 'antd-mobile';
-import {Icon} from 'antd-mobile';
+import TabBar from 'antd-mobile/lib/tab-bar';
+// import {Icon} from 'antd-mobile';
 import './root.less'
 import AsyncComponent from "./AsyncComponent";
 
