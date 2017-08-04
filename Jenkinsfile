@@ -21,7 +21,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-               input(parameters:{string(name: 'current build release') string(name: 'next snapshot version')})
+               input(message:"input",parameters:{string(name: 'current build release') string(name: 'next snapshot version')})
                 echo 'Deploying....'
             }
         }
