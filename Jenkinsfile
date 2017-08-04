@@ -9,7 +9,7 @@ pipeline {
 //    }
     stages {
 
-        stage(name: 'pipeline confirm'){
+        stage( 'pipeline confirm'){
             //执行确认
             steps{
                 input(message: 'exceute stage',parameters:[string(name: 'stage')])
