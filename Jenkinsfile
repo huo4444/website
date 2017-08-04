@@ -13,6 +13,7 @@ pipeline {
             //执行确认
             steps{
                 input(message: 'exceute stage',parameters:[string(name: 'stage')])
+                echo "hello ${params.stage}"
             }
 
         }
