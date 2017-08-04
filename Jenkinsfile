@@ -1,9 +1,7 @@
 #!groovy
 pipeline {
     agent any
-    when{
-        branch 'master'
-    }
+
     parameters {
         string(name: 'current build release')
         string(name: 'next snapshot version')
