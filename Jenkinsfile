@@ -2,8 +2,8 @@
 pipeline {
     agent any
     parameters {
-        string(name: '当前release版本')
-        string(name: '下一个snapshot版本')
+        string(name: 'current build release')
+        string(name: 'next snapshot version')
     }
     stages {
 
