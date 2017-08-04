@@ -2,11 +2,20 @@
 pipeline {
     agent any
 
-    parameters {
-        string(name: 'current build release')
-        string(name: 'next snapshot version')
-    }
+//    parameters {
+//        boolean(name: 'isRelease')
+//        string(name: 'current_deploy_build_release')
+//        string(name: 'next_dev_snapshot_version')
+//    }
     stages {
+
+        stage(name: 'pipeline confirm'){
+            //执行确认
+            steps{
+                input(message: 'exceute stage',parameters:[string(name: 'stage')])
+            }
+
+        }
 
         stage('Build') {
             steps {
@@ -21,7 +30,6 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                input(message:'input',parameters:[string(name: 'current_deploy_build_release') , string(name: 'next dev snapshot version')])
                 echo "Hello ${params.current_deploy_build_release}"
                 echo 'Deploying....'
             }
