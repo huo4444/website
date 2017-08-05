@@ -35,7 +35,7 @@ const Root = () => <HashRouter >
                 {/*<Breadcrumb.Item>List</Breadcrumb.Item>*/}
                 {/*<Breadcrumb.Item>App</Breadcrumb.Item>*/}
             </Breadcrumb>
-            <div style={{ background: '#fff', padding: 24, minHeight:768 }}>
+            <div style={{ background: '#fff', padding: 24, minHeight:640,minWidth:480 }}>
                 {routes.map((route, i) => (
                     <Route key={i} path={route.path} exact={route.exact} render={(props)=>{
                         return <AsyncComponent {...route}  {...props} />
