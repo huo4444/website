@@ -1,10 +1,7 @@
 #!groovy
 pipeline {
     agent any
-
-
     stages {
-
         stage( 'pipeline confirm'){
             //执行确认
             steps{
